@@ -29,7 +29,7 @@
 **Frontend**  
 - React.js  
 - React Router DOM  
-- TailwindCSS / CSS  
+- CSS  
 - Context API for Auth State  
 
 **Backend**  
