@@ -12,6 +12,7 @@ import AdminLayout from "./Components/layouts/AdminLayout";
 import AdminUser from "./Pages/AdminUser";
 import AdminContact from "./Pages/AdminContact";
 import AdminUpdate from "./Pages/AdminUpdate";
+import "./App.css"
 
 const App = () => {
   return (

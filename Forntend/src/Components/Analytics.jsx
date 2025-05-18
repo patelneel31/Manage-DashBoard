@@ -1,3 +1,4 @@
+import "./Analytics.css";
 export const Analytics = () => {
   return (
     <>

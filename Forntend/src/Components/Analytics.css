@@ -1,0 +1,73 @@
+.section-analytics {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: 4rem 1rem;
+  text-align: center;
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+.grid-four-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Individual analytics cards */
+.grid-four-cols > div {
+  background-color: var(--color-input-bg);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 10px 20px rgba(20, 184, 166, 0.15); /* teal-ish shadow */
+  transition: box-shadow var(--transition-speed) ease, background-color var(--transition-speed) ease;
+  cursor: default;
+}
+
+.grid-four-cols > div:hover,
+.grid-four-cols > div:focus-within {
+  box-shadow: 0 15px 30px rgba(20, 184, 166, 0.3);
+  background-color: var(--color-input-bg);
+  outline: none;
+}
+
+.grid-four-cols h2 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+  transition: color var(--transition-speed) ease;
+}
+
+.grid-four-cols p {
+  font-size: 1.125rem;
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .section-analytics {
+    padding: 3rem 1rem;
+  }
+
+  .grid-four-cols {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .grid-four-cols > div {
+    padding: 1.5rem 1rem;
+  }
+
+  .grid-four-cols h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-four-cols {
+    grid-template-columns: 1fr;
+  }
+}
